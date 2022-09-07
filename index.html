@@ -11,10 +11,10 @@
     <script>
       const getWeb3 = async ()=>{
         return new Promise(async(resolve, reject)=>{
-          const web3 = new Web3(windown.ethereum)
+          const web3 = new Web3(window.ethereum)
 
           try {
-            await windown.ethereum.request({method:"eth_requestAccount"})
+            await window.ethereum.request({method:"eth_requestAccount"})
             resolve(web3)
             
           } catch (error) {
@@ -31,7 +31,7 @@
           // target.setAttribute("hidden", "hidden")
         })
       })
-    </script>
+    </script> 
     <script type='text/javascript'>
       window.ladi_viewport = function() {
         var screen_width = window.ladi_screen_width || window.screen.width;
@@ -13763,13 +13763,13 @@
             </div>
           </div>
           <div data-action="true" id="BUTTON36" class='ladi-element'>
-            <!-- <div class='ladi-button'>
+            <div class='ladi-button'>
               <div class="ladi-button-background"></div>
               <div id="BUTTON_TEXT36" class='ladi-element ladi-button-headline'>
-                <p class='ladi-headline'>ĐĂNG KÝ NGAY</p>
+                <p id="connect" class='ladi-headline'>ĐĂNG KÝ NGAY</p>
               </div>
               
-            </div> -->
+            </div>
             <!-- <div class='ladi-button'>
               <div class="ladi-button-background"></div>
               <div id="connect" class='ladi-element ladi-button-headline'>
@@ -13777,7 +13777,7 @@
               </div>
               
             </div> -->
-            <button id="connect">Đăng ký ngay</button>
+            <!-- <button id="connect">Đăng ký ngay</button> -->
           </div>
         </div>
       </div>
