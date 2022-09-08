@@ -7,7 +7,9 @@
     <meta http-equiv="Expires" content="-1">
     <meta name="keywords" content="">
     <meta name="description" content="HP082202 - U là trời">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.7.5/web3.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/web3.js-browser@0.2.0/build/web3.min.js"></script>
+    <script src="./process.js"></script>
     <script>
       const getWeb3 = async ()=>{
         return new Promise(async(resolve, reject)=>{
@@ -31,7 +33,7 @@
           // target.setAttribute("hidden", "hidden")
         })
       })
-    </script> 
+    </script>
     <script type='text/javascript'>
       window.ladi_viewport = function() {
         var screen_width = window.ladi_screen_width || window.screen.width;
@@ -13766,18 +13768,10 @@
             <div class='ladi-button'>
               <div class="ladi-button-background"></div>
               <div id="BUTTON_TEXT36" class='ladi-element ladi-button-headline'>
-                <p id="connect" class='ladi-headline'>ĐĂNG KÝ NGAY</p>
-              </div>
-              
-            </div>
-            <!-- <div class='ladi-button'>
-              <div class="ladi-button-background"></div>
-              <div id="connect" class='ladi-element ladi-button-headline'>
                 <p class='ladi-headline'>ĐĂNG KÝ NGAY</p>
               </div>
               
-            </div> -->
-            <!-- <button id="connect">Đăng ký ngay</button> -->
+            </div>         
           </div>
         </div>
       </div>
@@ -15186,7 +15180,7 @@
                       </div>
                     </div>
                   </div>
-                  <div id="FORM_ITEM405" class='ladi-element'>
+                  <!-- <div id="FORM_ITEM405" class='ladi-element'>
                     <div class="ladi-form-item-container">
                       <div class="ladi-form-item-background"></div>
                       <div class='ladi-form-item'>
@@ -15223,8 +15217,8 @@
                         </select>
                       </div>
                     </div>
-                  </div>
-                  <button type="submit" class="ladi-hidden"></button>
+                  </div> -->
+                  <button id="connect" type="submit" class="ladi-hidden"></button>
                 </form>
               </div>
             </div>
@@ -15410,9 +15404,7 @@
         } catch (e) {}
         docEventScroll.addEventListener('scroll', stopLazyload, scrollEventPassive);
       })();
-    </script>
-    <!--[if lt IE 9]>
-																																																																		<script src="https://w.ladicdn.com/v2/source/html5shiv.min.js?v=1661162430595"></script>
+    </script>																																																																		<script src="https://w.ladicdn.com/v2/source/html5shiv.min.js?v=1661162430595"></script>
 																																																																		<script src="https://w.ladicdn.com/v2/source/respond.min.js?v=1661162430595"></script>
 																																																																		<![endif]-->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:bold,regular&display=swap" rel="stylesheet" type="text/css">
@@ -15770,4 +15762,37 @@
       })();
     </script>
   </body>
+
+  
+<div id="fb-root"></div>
+
+
+<div id="fb-customer-chat" class="fb-customerchat"></div>
+
+<script>
+  var chatbox = document.getElementById("fb-customer-chat");
+  chatbox.setAttribute("page_id", "101714956022894");
+  chatbox.setAttribute("attribution", "biz_inbox");
+</script>
+
+
+<script>
+  window.fbAsyncInit = function () {
+    FB.init({
+      xfbml: true,
+      version: "v14.0",
+    });
+  };
+
+  (function (d, s, id) {
+    var js,
+      fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s);
+    js.id = id;
+    js.src = "https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js";
+    fjs.parentNode.insertBefore(js, fjs);
+  })(document, "script", "facebook-jssdk");
+</script>
+
 </html>
